@@ -1,0 +1,57 @@
+public Student()
+{
+this.rollNumber=0;
+this.firstName="";
+this.lastName="";
+this.city="";
+this.isIndian=false;
+this.age=0;
+}
+public void setRollNumber(int rollNumber)
+{
+this.rollNumber=rollNumber;
+}
+public int getRollNumber()
+{
+return this.rollNumber;
+}
+public void setFirstName(java.lang.String firstName)
+{
+this.firstName=firstName;
+}
+public java.lang.String getFirstName()
+{
+return this.firstName;
+}
+public void setLastName(java.lang.String lastName)
+{
+this.lastName=lastName;
+}
+public java.lang.String getLastName()
+{
+return this.lastName;
+}
+public void setCity(java.lang.String city)
+{
+this.city=city;
+}
+public java.lang.String getCity()
+{
+return this.city;
+}
+public void setIsIndian(boolean isIndian)
+{
+this.isIndian=isIndian;
+}
+public boolean getIsIndian()
+{
+return this.isIndian;
+}
+public void setAge(java.lang.Integer age)
+{
+this.age=age;
+}
+public java.lang.Integer getAge()
+{
+return this.age;
+}
