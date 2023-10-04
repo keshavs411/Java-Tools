@@ -1,34 +1,30 @@
-Java Utility Classes
+# Java Utility Classes
+
 This README provides an overview of various Java utility classes designed to simplify common programming tasks. Each class addresses specific aspects of Java programming and offers usage examples.
 
-SetterGetterGenerator
-Overview
-The SetterGetterGenerator utility class automates the generation of constructor, setter, and getter methods for Java classes' fields.
+## SetterGetterGenerator
 
-Usage
-Compile the SetterGetterGenerator class:
+**Overview**
 
-bash
-Copy code
+The `SetterGetterGenerator` utility class automates the generation of constructor, setter, and getter methods for Java classes' fields.
+
+**Usage**
+**Compile the SetterGetterGenerator class:**
 javac SetterGetterGenerator.java
-Run the compiled class, providing the class name as a command-line argument:
 
-bash
-Copy code
+1) Run the compiled class, providing the class name as a command-line argument:
+
 java SetterGetterGenerator com.example.MyClass
 To generate constructors along with setters and getters, use the constructor=true flag:
-
-bash
-Copy code
 java SetterGetterGenerator com.example.MyClass constructor=true
-The utility generates constructor, setter, and getter methods for the class fields, saving them in a temporary file named tmp.tmp.
+
+2)The utility generates constructor, setter, and getter methods for the class fields, saving them in a temporary file named tmp.tmp.
 
 Example
 Assuming you have a class Person with fields name and age, running:
 
-bash
-Copy code
 java SetterGetterGenerator Person
+
 Generates constructor, setter, and getter methods for the name and age fields.
 
 PWPrintln
