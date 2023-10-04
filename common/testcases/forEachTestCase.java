@@ -1,4 +1,4 @@
-import com.thinking.machines.util.*;
+import com.java.util.*;
 class TMIteratorTestCase
 {
 public static void main(String gg[])

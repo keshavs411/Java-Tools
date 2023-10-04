@@ -1,4 +1,4 @@
-package com.thinking.machines.util;
+package com.java.util;
 import java.lang.reflect.*;
 import java.io.*;
 import java.util.*;

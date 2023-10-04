@@ -1,4 +1,4 @@
-import com.thinking.machines.util.*;
+import com.java.util.*;
 class KeyboardTestCase
 {
 public static void main(String gg[])

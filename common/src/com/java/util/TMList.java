@@ -1,4 +1,4 @@
-package com.thinking.machines.util;
+package com.java.util;
 public interface TMList
 {
 public void add(int data);

@@ -1,4 +1,4 @@
-package com.thinking.machines.util;
+package com.java.util;
 public class TMArrayList implements TMList
 {
 private int collection[];
