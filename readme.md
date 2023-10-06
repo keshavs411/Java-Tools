@@ -56,10 +56,10 @@
 <ol>
     <li>Compile the PWPrintln class:</li>
     <pre>javac PWPrintln.java</pre>
-    <ol>
+    <ul>
     <li>Run the compiled class, providing the input file's name as a command-line argument:</li>
     <pre>java PWPrintln input.txt</pre>
-    </ol>
+    </ul>
 </ol>
 
 <p>The utility creates a temporary Java file named tmp.tmp containing Java code lines for printing each line from the input file to a PrintWriter.</p>
@@ -88,11 +88,11 @@ This is a test.
 <ol>
     <li>Import the necessary package:</li>
     <pre>import com.java.util.*;</pre>
-    <ol>
+    <ul>
     <li>Create an instance of the Keyboard class:</li>
     <pre>Keyboard keyboard = new Keyboard();</pre>
-</ol>
-    <ol>
+</ul>
+    <ul>
     <li>Use provided methods to read user input:</li>
     <pre>
 String inputString = keyboard.getString("Enter a string: ");
@@ -100,7 +100,7 @@ char inputChar = keyboard.getCharacter("Enter a character: ");
 long inputLong = keyboard.getLong("Enter a long: ");
 int inputInt = keyboard.getInt("Enter an int: ");
     </pre>
-    </ol>
+    </ul>
 </ol>
 
 <h3>Example</h3>
@@ -126,14 +126,14 @@ int inputInt = keyboard.getInt("Enter an int: ");
 <ol>
     <li>Import the necessary package:</li>
     <pre>import com.java.util.*;</pre>
-<ol>    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
+<ul>    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
     <pre>
 TMArrayList arrayList = new TMArrayList();
 // OR
 TMLinkedList linkedList = new TMLinkedList();
     </pre>
-</ol>
-<ol>
+</ul>
+<ul>
     <li>Use provided methods to perform operations on the collection:</li>
     <pre>
 arrayList.add(element);
@@ -142,7 +142,7 @@ arrayList.remove(element);
 linkedList.remove(element);
 // ... and more
     </pre>
-    </ol>
+    </ul>
 
 </ol>
 
