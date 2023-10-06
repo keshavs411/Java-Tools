@@ -126,9 +126,9 @@ int inputInt = keyboard.getInt("Enter an int: ");
 <ol>
     <li>Import the necessary package:</li>
 
-    <pre>
+ 
     import com.java.util.*;
-
+<pre>
 public class TMArrayListExample {
     public static void main(String[] args) {
         // Create a TMArrayList
