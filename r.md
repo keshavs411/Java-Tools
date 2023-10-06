@@ -11,7 +11,8 @@
     <li><a href="#settergettergenerator">SetterGetterGenerator</a></li>
     <li><a href="#pwprintln">PWPrintln</a></li>
     <li><a href="#keyboard">Keyboard</a></li>
-    <li><a href="#collection-tmarraylist-and-tmlinkedlist">Collection - TMArrayList and TMLinkedList</a></li>
+    <li><a href="#collection-tmarraylist">Collection -TMArrayList </a></li>
+    <li><a href="#collection-tmlinkedlist">Collection -TMLinkedList</a></li>
 </ul>
 
 <h2 id="settergettergenerator">SetterGetterGenerator</h2>
@@ -107,7 +108,7 @@ int inputInt = keyboard.getInt("Enter an int: ");
 
 <p>Refer to the provided KeyboardExample class for usage examples.</p>
 
-<h2 id="collection-tmarraylist-and-tmlinkedlist">Collection - TMArrayList and TMLinkedList</h2>
+<h2 id="collection-tmarraylist">Collection - TMArrayList and TMLinkedList</h2>
 
 <h3>Overview</h3>
 
@@ -117,10 +118,6 @@ int inputInt = keyboard.getInt("Enter an int: ");
 
 <p>TMArrayList is an array-based list implementation.</p>
 
-<h4>TMLinkedList</h4>
-
-<p>TMLinkedList is a linked list implementation.</p>
-
 <h3>Usage</h3>
 
 <ol>
@@ -129,8 +126,7 @@ int inputInt = keyboard.getInt("Enter an int: ");
  
     import com.java.util.*;
 <pre>
-public class TMArrayListExample {
-    public static void main(String[] args) {
+  <li>Create an instance of TMLinkedList:</li>
         // Create a TMArrayList
         TMArrayList list = new TMArrayList();
 
@@ -151,11 +147,8 @@ public class TMArrayListExample {
 
         // Iterate through the elements using forEach
         System.out.println("Iterating through elements:");
-        list.forEach(new TMListItemAcceptor() {
-            @Override
-            public void accept(int item) {
-                System.out.println(item);
-            }
+         list.forEach((p) -> {
+        System.out.println(p);
         });
 
         // Update an element at a specific index
@@ -163,63 +156,69 @@ public class TMArrayListExample {
 
         // Iterate through the updated elements
         System.out.println("Iterating through updated elements:");
-        list.forEach(new TMListItemAcceptor() {
-            @Override
-            public void accept(int item) {
-                System.out.println(item);
-            }
+        list.forEach((p) -> {
+        System.out.println(p);
         });
+
     }
 }
 </pre>
 
-    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
-=======
-    <pre>import com.java.util.*;</pre>
-<ul>    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
->>>>>>> 9a160925cf4cbbb7dec3514a37470d07063228f9:readme.md
-    <pre>
-TMArrayList arrayList = new TMArrayList();
-// OR
-TMLinkedList linkedList = new TMLinkedList();
-    </pre>
-</ul>
-<ul>
-    <li>Use provided methods to perform operations on the collection:</li>
-    <pre>
-arrayList.add(element);
-linkedList.add(element);
-arrayList.remove(element);
-linkedList.remove(element);
-// ... and more
-    </pre>
-    </ul>
+  
+  </ul>
+  <h4>TMLinkedList</h4>
 
+<p>TMLinkedList is a linked list implementation.</p>
+
+<h3>Usage</h3>
+
+<ol>
+    <li>Import the necessary package:</li>
+
+  <pre>
+    import com.java.util.*;
+   
+    <li>Create an instance of TMLinkedList:</li>
+
+    TMLinkedList linkedList = new TMLinkedList();
+    
+
+    <li>Use provided methods to perform operations on the collection:</li>
+
+    ```
+    linkedList.add(10);
+    linkedList.add(20);
+    linkedList.add(30);
+    linkedList.add(40);
+    linkedList.add(50);
+
+    // Remove an element from the linked list
+    linkedList.remove(30); // Removes the element 30
+
+    // Get an element at a specific index
+    int elementAtIndex = linkedList.get(2); // Gets the element at index 2 (40)
+    System.out.println("Element at index 2: " + elementAtIndex);
+
+    // Iterate through the elements using forEach
+    System.out.println("Iterating through elements:");
+    linkedList.forEach((p) -> {
+        System.out.println(p);
+    });
+    
+    // Update an element at a specific index
+    linkedList.update(1, 25); // Updates the element at index 1 (20) to 25
+
+    // Iterate through the updated elements
+    System.out.println("Iterating through updated elements:");
+    linkedList.forEach((p) -> {
+        System.out.println(p);
+    });
+
+</pre>
 </ol>
 
-<h3>Example</h3>
+These examples demonstrate the usage of methods provided by TMLinkedList, such as adding elements, removing elements, getting elements by index, updating elements, and iterating through the collection. You can customize and expand these examples based on your specific requirements.
 
-<h4>TMArrayList Examples</h4>
-
-<pre>
-// ... Previous content ...
-
-// Iterate through the array list and print elements
-arrayList.forEach(data -> System.out.println(data));
-
-// ... Rest of the content ...
-</pre>
-
-<h4>TMLinkedList Examples</h4>
-
-<pre>
-// ... Previous content ...
-
-// Iterate through the linked list and print elements
-linkedList.forEach(data -> System.out.println(data));
-
-// ... Rest of the content ...
-</pre>
 
 <p>These examples demonstrate the usage of methods provided by both TMArrayList and TMLinkedList, such as adding elements, getting elements by index, removing elements, getting the size, clearing the collection, updating elements, copying elements to/from other collections, appending elements, and iterating through collections. You can customize and expand these examples based on your specific requirements.</p>
 
