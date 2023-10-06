@@ -122,7 +122,51 @@ int inputInt = keyboard.getInt("Enter an int: ");
 
 <ol>
     <li>Import the necessary package:</li>
-    <pre>import com.java.util.*;</pre>
+    <preimport com.java.util.*;
+
+public class TMArrayListExample {
+    public static void main(String[] args) {
+        // Create a TMArrayList
+        TMArrayList list = new TMArrayList();
+
+        // Adding elements
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+
+        // Remove an element at a specific index
+        int removedElement = list.removeAt(2); // Removes the element at index 2 (30)
+        System.out.println("Removed element: " + removedElement);
+
+        // Get an element at a specific index
+        int elementAtIndex = list.get(2); // Gets the element at index 2 (40)
+        System.out.println("Element at index 2: " + elementAtIndex);
+
+        // Iterate through the elements using forEach
+        System.out.println("Iterating through elements:");
+        list.forEach(new TMListItemAcceptor() {
+            @Override
+            public void accept(int item) {
+                System.out.println(item);
+            }
+        });
+
+        // Update an element at a specific index
+        list.update(1, 25); // Updates the element at index 1 (20) to 25
+
+        // Iterate through the updated elements
+        System.out.println("Iterating through updated elements:");
+        list.forEach(new TMListItemAcceptor() {
+            @Override
+            public void accept(int item) {
+                System.out.println(item);
+            }
+        });
+    }
+}
+</pre>
 
     <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
     <pre>
