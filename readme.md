@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    Java Tools
-</head>
 <body>
 
 <h1>Java Tools</h1>
@@ -28,12 +25,14 @@
 <ol>
     <li>Compile the SetterGetterGenerator class:</li>
     <pre>javac SetterGetterGenerator.java</pre>
-
+    <ol>
     <li>Run the compiled class, providing the class name as a command-line argument:</li>
     <pre>java SetterGetterGenerator com.example.MyClass</pre>
-
+    </ol>
+      <ol>
     <li>To generate constructors along with setters and getters, use the constructor=true flag:</li>
     <pre>java SetterGetterGenerator com.example.MyClass constructor=true</pre>
+      </ol>
 </ol>
 
 <p>The utility generates constructor, setter, and getter methods for the class fields, saving them in a temporary file named tmp.tmp.</p>
@@ -56,9 +55,10 @@
 <ol>
     <li>Compile the PWPrintln class:</li>
     <pre>javac PWPrintln.java</pre>
-
+    <ol>
     <li>Run the compiled class, providing the input file's name as a command-line argument:</li>
     <pre>java PWPrintln input.txt</pre>
+    </ol>
 </ol>
 
 <p>The utility creates a temporary Java file named tmp.tmp containing Java code lines for printing each line from the input file to a PrintWriter.</p>
@@ -87,10 +87,11 @@ This is a test.
 <ol>
     <li>Import the necessary package:</li>
     <pre>import com.java.util.*;</pre>
-
+    <ol>
     <li>Create an instance of the Keyboard class:</li>
     <pre>Keyboard keyboard = new Keyboard();</pre>
-
+</ol>
+    <ol>
     <li>Use provided methods to read user input:</li>
     <pre>
 String inputString = keyboard.getString("Enter a string: ");
@@ -98,6 +99,7 @@ char inputChar = keyboard.getCharacter("Enter a character: ");
 long inputLong = keyboard.getLong("Enter a long: ");
 int inputInt = keyboard.getInt("Enter an int: ");
     </pre>
+    </ol>
 </ol>
 
 <h3>Example</h3>
@@ -123,14 +125,14 @@ int inputInt = keyboard.getInt("Enter an int: ");
 <ol>
     <li>Import the necessary package:</li>
     <pre>import com.java.util.*;</pre>
-
-    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
+<ol>    <li>Create an instance of either TMArrayList or TMLinkedList based on your preference:</li>
     <pre>
 TMArrayList arrayList = new TMArrayList();
 // OR
 TMLinkedList linkedList = new TMLinkedList();
     </pre>
-
+</ol>
+<ol>
     <li>Use provided methods to perform operations on the collection:</li>
     <pre>
 arrayList.add(element);
@@ -139,6 +141,8 @@ arrayList.remove(element);
 linkedList.remove(element);
 // ... and more
     </pre>
+    </ol>
+
 </ol>
 
 <h3>Example</h3>
