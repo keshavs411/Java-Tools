@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Java Tools</title>
+    Java Tools
 </head>
 <body>
 
