@@ -25,14 +25,15 @@
 <ol>
     <li>Compile the SetterGetterGenerator class:</li>
     <pre>javac SetterGetterGenerator.java</pre>
-    <ol>
+   <ul>
     <li>Run the compiled class, providing the class name as a command-line argument:</li>
     <pre>java SetterGetterGenerator com.example.MyClass</pre>
-    </ol>
-      <ol>
+   </ul>
+<ul>
     <li>To generate constructors along with setters and getters, use the constructor=true flag:</li>
     <pre>java SetterGetterGenerator com.example.MyClass constructor=true</pre>
-      </ol>
+</ul>
+      
 </ol>
 
 <p>The utility generates constructor, setter, and getter methods for the class fields, saving them in a temporary file named tmp.tmp.</p>
