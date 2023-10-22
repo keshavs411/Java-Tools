@@ -128,7 +128,7 @@ int inputInt = keyboard.getInt("Enter an int: ");
 <pre>
   <li>Create an instance of TMLinkedList:</li>
         // Create a TMArrayList
-        TMArrayList list = new TMArrayList();
+        TMList list = new TMArrayList();
 
         // Adding elements
         list.add(10);
@@ -180,7 +180,7 @@ int inputInt = keyboard.getInt("Enter an int: ");
    
     <li>Create an instance of TMLinkedList:</li>
 
-    TMLinkedList linkedList = new TMLinkedList();
+    TMList linkedList = new TMLinkedList();
     
 
     <li>Use provided methods to perform operations on the collection:</li>
